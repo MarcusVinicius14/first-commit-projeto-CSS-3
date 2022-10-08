@@ -1,0 +1,132 @@
+h1 {
+    color: red;
+    background: black;
+
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+button {
+    background: green;
+    border-color: darkgreen;
+}
+
+/* *{} serve para modificar todos os elementos da pagina 
+
+ class = seria como um SEP. ela serve para identificar varios elementos. 
+ ou seja, varios elementos html podem usar a mesma classe, e 
+ conseguimos estilizados no CSS
+
+ id = Ja o ID seria como seu CPF ou RG. 
+ ele serve para identificar apenas UM elemento. 
+ Ou seja, voce so pode usar um ID especifico 
+ uma vez na sua pagina HTML 
+*/
+
+#titulo{
+    color: red;
+    font-size: 55px;
+}
+
+#paragrafo {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#botao {
+    background: green;
+}
+
+#botao2 {
+    background: chocolate;
+}
+
+
+.texto {
+    color:brown;
+    font-weight: bold;
+}
+
+
+/*
+ CSS
+
+ => folha de estilo em CASCATA
+
+ ele sempre le o cidigo em cascata de cima para baixo ent se
+ comandos estiverem em conflito ele vai utilizar o ultimo comando
+*/
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+
+/*
+        CORES
+
+        RGB::
+        RED
+        GREEN
+        BLUE
+
+        HEXADECIMAL
+
+        decimal => 1,2,3,4,5,6,7,8,9
+        hezadecimal=> 1,2,3,4,5,6,7,8,9A,B,C,D,E,F
+    
+
+        adobe color => lugar para pegar e testar cores
+
+        extenção para chrome para pegar cores de site => ColorZilla
+*/
+h1 {
+    background: rgb(0,255,0);
+}
+
+h1{
+    background: #FF0000;
+
+}
+
+/*
+ UNIDADES DE MEDIDAS
+
+ -> ABSOLUTAS
+    px (pixels) = 1/100 polegada 0,254 mm
+    in (inches/polegadas)
+    cm/mm (centímetro/milímetro)
+
+-> RELATIMAS
+    % calcula o tamanho relativo ao elemento pai - util para imagens que vc quer que se adapti a referencia
+    vw (view width) 1vw é 1% da largura da janela do navegador
+    vh (view height) 1vh é 1% da altura da janela do navegador
+    
+    em é uma unidade relativa ao elemento pai
+    rem é uma unidade relativa ao elemento raiz
+
+    vw e vh muito utuil para se usar, ja que se atapta a diferentes tipos de tamanhos de tela
+    em util para aumento em cascata o de cima aumento todos os de baixo irão aumentar tambem
+    rem se refere ao proomeiro elemento ao elemento raiz
+
+
+    quais utilizar:
+
+    - px
+    usar unidades relativas quando vc quer que os elementos se adptem
+*/
+
+.pai{
+    font-size: 16px;
+}
+.filho {
+    font-size: 100%;
+}

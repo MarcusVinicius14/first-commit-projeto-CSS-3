@@ -1,0 +1,20 @@
+
+/*  border-box coloca os elementos dentro da altura e largura respeitando o tamanho original do elemento
+
+box content vai somando os elementos, exemplo: imagem mais borda mais padding
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background: #ff1493ff;
+    border: 10px solid #0000ff;
+
+}                                                                   
